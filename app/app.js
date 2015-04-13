@@ -1,4 +1,4 @@
-angular.module('app', ['ngNewRouter', 'app.home', 'app.detail'])
+angular.module('app', ['ngNewRouter', 'ngMaterial', 'app.home', 'app.detail'])
 	.controller('AppController', ['$router', AppController]);
 
 AppController.$routeConfig = [

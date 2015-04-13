@@ -1,2 +1,14 @@
-<h1>Hello {{home.name}}!</h1>
-<a ng-link="detail({id: 5})">link to detail</a>
+<md-content layout="column" layout-margin layout-padding 
+ layout-fill ng-controller="HomeController as home">
+	<md-card layout="row" layout-fill layout-align="center center">
+		<md-card-content layout-wrap layout-margin>
+			<h2>Hello {{home.name}}!</h2>
+			<a ng-link="detail({{home.parametros}})"><md-button class="md-raised md-primary">link to detail</md-button></a>
+		</md-card-content>
+
+		<md-card-content layout-wrap layout-margin layout="row" layout-align="center center">
+			<h2 layout-margin>Hello {{home.name}}!</h2>
+			<a ng-link="detail({{home.parametros}})" layout-margin><md-button class="md-raised md-primary">link to detail</md-button></a>
+		</md-card-content>
+	</md-card>
+</md-content>

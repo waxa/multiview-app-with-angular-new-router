@@ -1,4 +1,4 @@
-angular.module('app.detail', ['ngNewRouter'])
+angular.module('app.detail', ['ngNewRouter', 'ngMaterial'])
 	.controller('DetailController', ['$routeParams', DetailController]);
 
 function DetailController ($routeParams) {

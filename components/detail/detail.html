@@ -1,2 +1,5 @@
-<p>detail {{detail.id}}</p>
-<a ng-link="home()">link to home</a>
+<md-content layout="column" layout-margin layout-padding 
+layout-align="center center" layout-fill ng-controller="HomeController as home">
+	<h2>detail {{detail.id}}</h2>
+	<a ng-link="home()"><md-button class="md-raised md-primary">link to home</md-button></a>
+</md-content>
